@@ -1,3 +1,16 @@
+// Background Blob
+const blob = document.querySelector(".blob");
+
+document.body.addEventListener("mousemove", (e) => {
+  blob.animate(
+    {
+      left: `${e.clientX}px`,
+      top: `${e.clientY}px`,
+    },
+    { duration: 3000, fill: "forwards" }
+  );
+});
+
 // Changing Header properties when scrolling
 const header = document.querySelector(".header");
 

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  z-index: 10;
 }
 
 ul,
@@ -65,6 +66,7 @@ body {
 .section-separators {
   width: 100%;
   height: 60px;
+  position: relative;
 
   background: var(--secondary-clr);
   display: flex;
@@ -74,6 +76,60 @@ body {
 
   font-size: 2rem;
   font-weight: 800;
+  z-index: 10;
+}
+
+/* Blob CSS */
+
+.blob-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+  filter: blur(125px);
+}
+.blob {
+  height: 200px;
+  aspect-ratio: 1;
+  position: fixed;
+  background: linear-gradient(
+    to right,
+    lightgreen,
+    aquamarine,
+    rgb(138, 138, 255)
+  );
+
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  z-index: -1;
+
+  animation: blob-ani 20s infinite;
+}
+/* .bg-blur {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+  z-index: 0;
+  backdrop-filter: blur(125px);
+} */
+
+@keyframes blob-ani {
+  0% {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
 }
 
 /* Header */
@@ -247,6 +303,10 @@ body {
 
 /* About */
 
+.about__title {
+  z-index: 10;
+}
+
 .about__content {
   margin-top: 2rem;
   width: 100%;
@@ -279,6 +339,9 @@ body {
   margin-top: 10rem;
 }
 
+.projects__content {
+  position: relative;
+}
 .projects__content > h3 {
   text-align: center;
   margin: 2rem 0;
@@ -320,6 +383,7 @@ body {
 /* Footer */
 
 .footer {
+  position: relative;
   width: 100%;
   min-height: 100px;
   background: var(--footer-clr);
