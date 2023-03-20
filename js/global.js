@@ -39,3 +39,18 @@ const sidebarBtn = document.querySelector(".header__nav--toggle");
 sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("header__links--active");
 });
+
+// Vanilla-tilt
+
+import VanillaTilt from "vanilla-tilt";
+
+const projectsCardImg = document.querySelectorAll(".projects__card--img");
+
+projectsCardImg.forEach((img) => img.setAttribute("draggable", false));
+
+VanillaTilt.init(projectsCardImg, {
+  reverse: true,
+  max: 10,
+  speed: 400,
+  gyroscope: false,
+});

@@ -480,6 +480,14 @@ body {
   font-weight: 800;
   margin: 0.75rem 0;
 }
+
+/* CSS For vanilla-tilt */
+.projects__card--img {
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
 /* Footer */
 
 .footer {
