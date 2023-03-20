@@ -30,14 +30,14 @@
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <a href="/">Christiano Besse</a>
+        <a href="index.html">Christiano Besse</a>
       </div>
 
       <div class="header__nav">
         <nav>
           <ul class="header__links">
             <li class="header__link">
-              <a href="index.html">Portfolio</a>
+              <a href="#">Portfolio</a>
             </li>
             <li class="header__link">
               <a href="#about">Sobre Mim</a>
@@ -68,33 +68,80 @@
           <div class="hero__text">
             <h1>Christiano Besse</h1>
             <h2>Desenvolvedor Front-End</h2>
-            <a href="https://github.com/ChrisBesse" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
+            <div class="hero__text--links">
+              <a href="https://github.com/ChrisBesse" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="resume-viewer.html"
+                class="btn btn-primary"
+                id="hero__text--curriculo"
+                >Curriculo</a
+              >
+            </div>
           </div>
         </div>
       </section>
 
       <!-- About -->
       <section class="about" id="about">
-        <div class="about__title section-separators">Sobre Mim</div>
+        <h2 class="about__title section-separators">Sobre Mim</h2>
         <div class="about__content">
           <div class="about__text">
             Ola! me chamo Christiano Besse da Silva, tenho 18 anos e estou
             atualmente a procura de emprego na área de desenvolvimento web. Eu
-            construo designs e estruturas de websites, e meu foco é em HTML, CSS
-            e Javascript, então minha área de conforto é Front-End. Meu objetivo
-            atual é me tornar um desenvolvedor júnior.
+            construo designs e estruturas de websites e meu foco é em HTML, CSS
+            e Javascript. Minha área de conforto é Front-End. Meu objetivo atual
+            é me tornar um desenvolvedor júnior.
           </div>
           <div class="about__img">
             <img src="imgs/about-img.svg" alt="About Image" srcset="" />
+          </div>
+        </div>
+
+        <!-- Technical Experiences -->
+        <div class="technical">
+          <h3 class="technical__title">Experiências Técnicas</h3>
+          <div class="technical__content">
+            <div class="technical__card">
+              <h3 class="technical__card--title">Educação</h3>
+              <p class="technical__card--text">
+                Escola Técnica Estadual de Santa Cruz - ETESC/FAETEC -
+                Informática
+              </p>
+            </div>
+
+            <div class="technical__card">
+              <h3 class="technical__card--title">Linguagens</h3>
+              <p class="technical__card--text">Javascript, PHP, Java, Python</p>
+            </div>
+
+            <div class="technical__card">
+              <h3 class="technical__card--title">Front-End</h3>
+              <p class="technical__card--text">HTML5 e CSS3</p>
+            </div>
+
+            <div class="technical__card">
+              <h3 class="technical__card--title">Ferramentas</h3>
+              <p class="technical__card--text">Git e Github</p>
+            </div>
+
+            <div class="technical__card">
+              <h3 class="technical__card--title">Design</h3>
+              <p class="technical__card--text">Figma</p>
+            </div>
+
+            <div class="technical__card">
+              <h3 class="technical__card--title">Idiomas</h3>
+              <p class="technical__card--text">Português e Inglês</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
       <section class="projects" id="projects">
-        <div class="projects__title section-separators">Projetos Escolares</div>
+        <h2 class="projects__title section-separators">Projetos</h2>
 
         <div class="projects__content">
           <h3>Coleção de projetos feitos durante meu ensino medio</h3>
