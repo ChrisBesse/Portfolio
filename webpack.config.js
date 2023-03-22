@@ -1,9 +1,13 @@
+const path = require("path");
+
 module.exports = {
-  mode: "development",
-  entry: "./js/global.js",
+  mode: "production",
+  entry: {
+    entry: path.resolve(__dirname, "./public/js/global.js"),
+  },
   output: {
+    path: path.resolve(__dirname, "./public/dist/"),
     filename: "main.js",
-    publicPath: "dist",
   },
   module: {
     rules: [

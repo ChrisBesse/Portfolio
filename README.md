@@ -1,6 +1,10 @@
 # Portfolio website made by me
 
-\*Early version
+To run:
+
+```
+npm install
+```
 
 ## Access:
 
