@@ -77,6 +77,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".about__content > *", {
+  duration: 1.25,
   scrollTrigger: {
     trigger: ".about",
     toggleActions: "restart none none none",
