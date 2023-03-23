@@ -5,6 +5,7 @@ const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "public");
 
 export default defineConfig({
+  base: "./",
   root,
   build: {
     // Relative to the root
