@@ -82,6 +82,7 @@ body {
 /* Btns */
 
 .btn {
+  opacity: 1;
   border: none;
   outline: none;
   border-radius: 5px;
@@ -251,11 +252,12 @@ body {
     position: fixed;
     right: calc(var(--width) * -1);
     bottom: 0;
-    height: calc(100% - var(--header-height));
+    height: calc(100vh - var(--header-height));
     width: var(--width);
     background: var(--footer-clr);
 
     transition: right 300ms ease;
+    transform: translateY(100%);
   }
   .header__links--active {
     right: 0;

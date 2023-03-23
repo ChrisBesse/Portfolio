@@ -1,4 +1,4 @@
-# Portfolio website made by me
+# Portfolio website made from scratch
 
 To run:
 
