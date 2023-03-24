@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
+import { createHtmlPlugin } from "vite-plugin-html";
 
 const root = resolve(__dirname, "src");
 const outDir = resolve(__dirname, "public");
@@ -14,8 +15,13 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, "index.html"),
-        resume: resolve(root, "resume-viewer.html"),
+        resume: resolve(root, "resume/index.html"),
       },
     },
   },
+  plugins: [
+    createHtmlPlugin({
+      minify: true,
+    }),
+  ],
 });
