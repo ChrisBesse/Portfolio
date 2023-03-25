@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ChrisBesse/Portfolio#readme",
   "dependencies": {
     "gsap": "^3.11.5",
+    "split-type": "^0.3.3",
     "vanilla-tilt": "^1.8.0",
     "vite-plugin-html": "^3.2.0"
   },

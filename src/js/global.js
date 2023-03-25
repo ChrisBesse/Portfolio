@@ -55,9 +55,14 @@ VanillaTilt.init(projectsCardImg, {
   gyroscope: false,
 });
 
-// GSAP
+// GSAP & Split Type
 
+import splitType from "split-type";
 import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
+
+let split = splitType.create(".hero__text > h1");
 
 const tl = gsap.timeline({ defaults: { duration: 0.8 } });
 
@@ -66,15 +71,14 @@ tl.from(".header", { yPercent: "-100" })
     opacity: 0,
     x: "-20px",
   })
-  .from(".hero__text > *", { opacity: 0, stagger: 0.3, x: "30px" });
+  .from(".hero__text > *", { opacity: 0, stagger: 0.3, x: "30px" })
+  .from(split.chars, { opacity: 0, stagger: 0.05, y: "-20px" }, 1.8);
 
 // GSAP ScrollTrigger
 
 const tl2 = gsap.timeline();
 
 import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".about__content > *", {
   duration: 1.25,
