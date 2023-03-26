@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { createHtmlPlugin } from "vite-plugin-html";
 
 const root = resolve(__dirname, "src");
-const outDir = resolve(__dirname, "public");
+const outDir = resolve(__dirname, "site");
 
 export default defineConfig({
   base: "./",
