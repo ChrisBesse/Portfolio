@@ -17,10 +17,10 @@ ol {
 
 :root {
   --primary-clr: #39cd2c;
-  --secondary-clr: #001757;
+  --secondary-clr: #7fdbff;
 
-  --bg-clr: #010011;
-  --fg-clr: #fff;
+  --bg-clr: #001f3f;
+  --fg-clr: #f5f5f5;
 
   --header-height: 60px;
   --header-clr: rgb(16, 36, 92);
@@ -29,14 +29,14 @@ ol {
 }
 
 .dark-mode {
-  --secondary-clr: #9bb6ff;
+  --secondary-clr: #2d3748;
 
   --bg-clr: #e9e9e9;
-  --fg-clr: #010011;
+  --fg-clr: #4a5568;
 
   --header-clr: rgb(190, 207, 255);
 
-  --footer-clr: #aeb4c4;
+  --footer-clr: #f0f4f8;
 }
 
 /* Global Css */
@@ -69,6 +69,7 @@ body {
   position: relative;
 
   background: var(--secondary-clr);
+  color: var(--bg-clr);
   display: flex;
   align-items: center;
 
